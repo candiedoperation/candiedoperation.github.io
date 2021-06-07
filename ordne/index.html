@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Ordne | A simple Pomodoro Timer</title>
     <link href="/material-css/css/material.min.css" rel="stylesheet">
 </head>
 
+<style>
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-bg {
+        background-image: url('bg.jpg');
+        background-size: cover;
+    }
+
+    .divide-ui {
+        backdrop-filter: blur(8px) brightness(50%);
+    }
+</style>
+
 <body>
+    <div class="main-bg h-100">
+        <div class="divide-ui h-100 d-flex flex-row">
+            <div class="flex-grow-1 d-flex flex-column my-auto pl-3">
+                <h1 class="text-center text-light">Ordne</h1>
+                <div class="navdrawer-divider"></div>
+                <h4 class="text-center text-truncate text-light" style="max-width: 100%;">A simple Pomodoro Timer</h4>
+                <a class="text-center mt-2" href="https://appcenter.elementary.io/com.github.USER.REPO"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter"></a>
+            </div>
+            <img class="demo-01 mx-auto my-auto" src="diag-screenshot.png" />
+        </div>
+    </div>
+
     <!-- jQuery, Bootstrap Bundle (includes Popper) and Material -->
     <script src="/jquery/jquery-3.6.0.min.js"></script>
     <script src="/material-css/js/bootstrap.bundle.min.js"></script>
